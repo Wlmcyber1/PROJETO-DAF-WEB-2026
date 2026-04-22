@@ -1,0 +1,29 @@
+{
+  "name": "calculadora-tributacao-backend",
+  "version": "1.0.0",
+  "description": "Backend para calculadora de tributação com autenticação e persistência",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "db:init": "node migrations/init.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "5.19",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "html-pdf-node": "^1.0.8",
+    "nodemailer": "^6.10.1",
+    "pg": "^8.11.3",
+    "prisma": "5.19"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

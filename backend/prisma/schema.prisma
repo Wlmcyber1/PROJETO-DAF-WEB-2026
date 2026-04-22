@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model comparisons {
+  id             Int       @id @default(autoincrement())
+  user_id        Int?
+  renda_mensal   Decimal   @db.Decimal(10, 2)
+  custos_mensais Decimal   @db.Decimal(10, 2)
+  resultado_json Json?
+  created_at     DateTime? @default(now()) @db.Timestamp(6)
+  users          users?    @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([user_id], map: "idx_comparisons_user_id")
+}
+
+model users {
+  id            Int           @id @default(autoincrement())
+  email         String        @unique @db.VarChar(255)
+  password_hash String        @db.VarChar(255)
+  created_at    DateTime?     @default(now()) @db.Timestamp(6)
+  updated_at    DateTime?     @default(now()) @db.Timestamp(6)
+  comparisons   comparisons[]
+
+  @@index([email], map: "idx_users_email")
+}
