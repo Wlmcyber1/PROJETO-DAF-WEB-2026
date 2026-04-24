@@ -19,6 +19,7 @@ export default function Home() {
     const comparison = compareTaxes({
       rendaMensal: data.rendaMensal,
       custosMensais: data.custosMensais,
+      profissao: data.profissao, // ← CORRIGIDO: era omitido, agora passado corretamente
     });
     setResult({
       ...comparison,
@@ -134,7 +135,6 @@ export default function Home() {
               <h5 className="footer-title">Institucional</h5>
               <ul className="list-unstyled">
                 <li className="mb-2"><a href="https://unichristus.edu.br" target="_blank" rel="noreferrer" className="footer-link">Página Inicial Unichristus</a></li>
-
               </ul>
             </div>
           </div>
