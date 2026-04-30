@@ -9,7 +9,6 @@ A aplicação permite que o usuário insira sua renda mensal, custos e profissã
 - Imposto de Renda (Tabela 2026)
 - Simples Nacional (PJ – 6%)
 - Total de impostos
-- Renda líquida após tributos
 
 ---
 
