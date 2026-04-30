@@ -1,4 +1,4 @@
-# 📊 Calculadora Tributária NAF - 2026
+# 📊 Calculadora Tributária - DAF WEB 2026
 
 ## 📌 Sobre o projeto
 Este é um projeto desenvolvido para a cadeira de Desenvolvimento e Aplicações e Frameworks Web, da Unichristus - DOM LUIS, com o objetivo de criar uma aplicação que **compare a tributação entre Pessoa Física (PF) e Pessoa Jurídica (PJ)** de forma simples e visual.  
@@ -75,9 +75,18 @@ A aplicação permite que o usuário insira sua renda mensal, custos e profissã
 ---
 
 ## 📂 Estrutura principal (Backend)
-- `src/config/`, `src/controllers/`, `src/models/`, `src/routes/`, `src/services/`, `src/templates/`, `src/utils/`, `src/server.js`, `docker-compose.yml`.
+- `src/config/` → configurações de banco de dados e email
+- `src/controllers/` → lógica de negócio das rotas
+- `src/middleware/` → middlewares (ex: autenticação)
+- `src/models/` → modelos de dados (ex: usuários, comparações)
+- `src/routes/` → definição das rotas da API
+- `src/services/` → serviços auxiliares (ex: envio de email)
+- `src/templates/` → templates de email e relatórios
+- `src/utils/` → funções utilitárias
+- `src/server.js` → arquivo principal do servidor
+- `docker-compose.yml` → configuração Docker
 
 ---
 
 ## Observações
-**Este projeto foi desenvolvido como parte de um trabalho acadêmico (NP2 - 2026.1), sob orientação do Prof. Maurício Moreira Neto. Não deve ser utilizado como ferramenta oficial de cálculo tributário.**
+**Este projeto foi desenvolvido como parte de um trabalho acadêmico de graduação. Não deve ser utilizado como ferramenta oficial de cálculo tributário, mas sim como exercício didático.**
