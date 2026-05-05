@@ -44,7 +44,7 @@ A aplicação permite que o usuário insira sua renda mensal, custos e profissã
 ## ▶️ Como executar
 
 ### Pré-requisitos
-- Node.js 16+
+- REACT.JS
 - Git
 
 ### Setup Inicial
