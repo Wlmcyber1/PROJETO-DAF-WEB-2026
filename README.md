@@ -57,5 +57,5 @@ A aplicação permite que o usuário insira sua renda mensal, custos e profissã
 3. **Iniciar aplicação:**
    ```bash
    npm run dev
-
+---
    ### Este projeto foi desenvolvido como parte de um trabalho acadêmico de graduação. Não deve ser utilizado como ferramenta oficial de cálculo tributário, mas sim como exercício didático.
