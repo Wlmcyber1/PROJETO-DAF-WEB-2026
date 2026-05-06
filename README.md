@@ -16,7 +16,7 @@ A aplicação permite que o usuário insira sua renda mensal, custos e profissã
 - **React.js** – construção da interface (Componentes Funcionais e Hooks)
 - **React Router** – navegação entre páginas (Login e Home)
 - **Chart.js** – geração dos gráficos comparativos
-- **Bootstrap** – estilização e responsividade
+
 
 ---
 
